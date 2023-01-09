@@ -24,5 +24,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
+      #名前、メールアドレス、パスワード、パスワードの確かめ
     end
 end
